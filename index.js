@@ -8,6 +8,11 @@ var fs = require('fs');
 var handlers = require('./lib/handlers');
 var helpers = require('./lib/helpers');
 
+// testing twilio - add creds in config from account
+// helpers.sendTwilioSms('yourPhoneNumber','hello!',function(err){
+//   console.log('this was the error',err);
+// });
+
 // var _data = require('./lib/data');
 
 // Testing
