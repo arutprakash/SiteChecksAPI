@@ -1,0 +1,1 @@
+{"check":{"id":"0dnsqgjufj399ivffng7","userPhone":"9551234567","protocol":"https","url":"yahoo.com","method":"get","successCodes":[200,201],"timeoutSeconds":3,"state":"down","lastChecked":1628097279875},"outcome":"down","state":false,"alert":1628099012149}
