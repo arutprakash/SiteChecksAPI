@@ -1,1 +1,1 @@
-{"check":{"id":"z992smj7zlkekyllg4ww","userPhone":"9551234567","protocol":"https","url":"google.com","method":"get","successCodes":[200,201,301,301],"timeoutSeconds":3,"state":"up","lastChecked":1628100493313},"outcome":"up","state":false,"alert":1628100503625}
+{"check":{"id":"z992smj7zlkekyllg4ww","userPhone":"9551234567","protocol":"https","url":"google.com","method":"get","successCodes":[200,201,301,301],"timeoutSeconds":3,"state":"up","lastChecked":1628789091206},"outcome":"up","state":false,"alert":1628789139902}

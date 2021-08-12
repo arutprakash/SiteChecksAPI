@@ -1,16 +1,11 @@
-1 The API listens on a port and accepts incoming HTTP requests for POST, GET, PUT, DELETE AND HEAD
+A API to have periodic checks and logging of you website of desire.
 
-2 The API allows a client to connect, then create a new user, then edit and delete that user.
+1 The API listens on a port and accepts incoming HTTP/HTTPS requests for POST, GET, PUT, DELETE
 
-3 The API allows a user to "sign in" which gives them a token that they can use for a subsequent authenticated requests
+2 The API allows the client to connect, create, edit and delete their profile as a user.
 
-4 The API allows the user to "sign out" which invalidates their token
+3 The API allows a authenticated user to use their token to create a new "check" on websites of their desire
 
-5 The API allows a signed in user to use their token to create a new "check"
+4 In the background, workers perform all the "checks" at a invertval of 60 minutes and send alerts to the users on their registered phone (via Twilio) when a check changes its states from "up" to "down", or vise versa.
 
-6 The API allows a signed in user to edit or delete any of their checks.
-
-7 In the background, workers perform all the "checks" at the appropriate times and send alerts to the users when a check changes its states from "up" to "down", or vise versa.
-
-Use Twlio for messaging
-JSON at fs
+5 The logs of all the checks and tokens are saved to the file system and compressed every 24 hours.
