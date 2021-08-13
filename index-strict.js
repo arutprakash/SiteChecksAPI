@@ -1,35 +1,38 @@
 /*
-Primary file for the API
-*/
+ * Primary file for API - stricts
+ *
+ */
 
+// Dependencies
 var server = require('./lib/server');
 var workers = require('./lib/workers');
 var cli = require('./lib/cli');
 
-// Declare app = {};
+// Declare the app
 var app = {};
 
+// Declaring a global (strict should catch this mistake)
+foo = 'bar';
+
 // Init function
-app.init = function(callback){
+app.init = function(){
+
   // Start the server
   server.init();
 
   // Start the workers
   workers.init();
 
-  // Start the CLI with a timeout
+  // Start the CLI, but make sure it starts last
   setTimeout(function(){
     cli.init();
-    callback();
   },50);
-  
 
 };
 
-// Self invoking only if required directly
-if(require.main === module){
-  app.init(function(){});
-}
+// Self executing
+app.init();
+
 
 // Export the app
 module.exports = app;
