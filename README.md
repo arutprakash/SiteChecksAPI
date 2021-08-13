@@ -1,4 +1,4 @@
-A API to have periodic checks and logging of you website of desire.
+A SiteChecksAPI is an uptime monitoring application. It periodically checks and loggs of you website of desire.
 
 1 The API listens on a port and accepts incoming HTTP/HTTPS requests for POST, GET, PUT, DELETE
 
